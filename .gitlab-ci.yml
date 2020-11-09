@@ -1,0 +1,26 @@
+image: java:latest
+
+stages:
+  - build
+  - test
+  - execute
+
+include:
+  - template: Code-Quality.gitlab-ci.yml
+
+build:
+  stage: build
+  script: /usr/lib/jvm/java-8-openjdk-amd64/bin/javac HelloWorld.java
+  artifacts:
+    paths:
+     - HelloWorld.*
+
+code_quality:
+  stage: test
+  artifacts:
+    expose_as: 'Code Quality Report'
+    paths: [gl-code-quality-report.json]
+
+execute:
+  stage: execute
+  script: /usr/lib/jvm/java-8-openjdk-amd64/bin/java HelloWorld
