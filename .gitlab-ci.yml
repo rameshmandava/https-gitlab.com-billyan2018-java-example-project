@@ -3,7 +3,6 @@ image: java:latest
 stages:
   - build
   - test
-  - execute
 
 include:
   - template: Code-Quality.gitlab-ci.yml
@@ -21,6 +20,3 @@ code_quality:
     expose_as: 'Code Quality Report'
     paths: [gl-code-quality-report.json]
 
-execute:
-  stage: execute
-  script: /usr/lib/jvm/java-8-openjdk-amd64/bin/java HelloWorld
