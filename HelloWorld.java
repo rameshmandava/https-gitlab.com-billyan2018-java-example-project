@@ -6,6 +6,7 @@ public class HelloWorld {
 
     public int hello(int a, int b, int c, int d, int e, int f, int g)
     {
+        int notUsed = 1;
         shared = 100;
         return a + b;
     }
