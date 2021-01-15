@@ -4,5 +4,7 @@
     enabled: false
   pmd:
     enabled: true
+    config:
+      file: pmd-rules.xml
   checkstyle:
     enabled: true
