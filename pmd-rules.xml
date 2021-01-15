@@ -64,7 +64,7 @@
     <rule ref="category/java/documentation.xml/UncommentedEmptyConstructor" />
     <rule ref="category/java/documentation.xml/UncommentedEmptyMethodBody" />
     <rule ref="category/java/bestpractices.xml/JUnitUseExpected" />
-    <rule ref="category/java/errorprone.xml/DetachedTestCase" />
+    <!--rule ref="category/java/errorprone.xml/DetachedTestCase" /-->
     <rule ref="category/java/performance.xml/StringToString" />
     <rule ref="category/java/errorprone.xml/UseEqualsToCompareStrings" />
     <rule ref="category/java/design.xml/AvoidThrowingNewInstanceOfSameException" />
