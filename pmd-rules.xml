@@ -20,13 +20,8 @@
     <!-- Logging -->
     <rule ref="category/java/bestpractices.xml/AvoidPrintStackTrace" />
     <rule ref="category/java/bestpractices.xml/SystemPrintln" />
-    <rule ref="category/java/errorprone.xml/ProperLogger">
-        <properties>
-            <property name="staticLoggerName" value="log" />
-            <property name="loggerName" value="log" />
-            <property name="loggerClass" value="Log" />
-        </properties>
-    </rule>
+    <rule ref="category/java/errorprone.xml/ProperLogger"/>
+
     <!-- Defensive Programming -->
     <rule ref="category/java/bestpractices.xml/PositionLiteralsFirstInCaseInsensitiveComparisons" />
     <rule ref="category/java/bestpractices.xml/PositionLiteralsFirstInComparisons" />
