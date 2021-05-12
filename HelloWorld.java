@@ -10,4 +10,9 @@ public class HelloWorld {
         return a + b;
     }
 
+    public int hello2(int a, int b, int c, int d, int e, int f, int g) {
+        shared = 100;
+        return a + b;
+    }
+
 }
