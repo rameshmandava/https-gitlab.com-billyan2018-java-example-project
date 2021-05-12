@@ -1,7 +1,7 @@
  version: "2"         # required to adjust maintainability checks
  plugins:
   sonar-java:
-    enabled: false
+    enabled: true
   pmd:
     enabled: true
   checkstyle:
